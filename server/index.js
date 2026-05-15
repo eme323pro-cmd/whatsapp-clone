@@ -11,7 +11,7 @@ const io = new Server(server, {
   cors: {
     origin: [
         "http://localhost:5173",
-        "https://whatsapp-clone-ten-alpha.vercel.app/"
+        "https://whatsapp-clone-ten-alpha.vercel.app/" // Añado la ruta nueva que no es la local
     ],
     methods: ["GET", "POST"]
   }
