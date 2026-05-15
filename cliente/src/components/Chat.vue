@@ -2,10 +2,9 @@
 import { ref, onMounted } from 'vue';
 import { io } from 'socket.io-client';
 
-// Conectamos con el servidor
 const socket = io('https://whatsapp-clone-u4sn.onrender.com', {
-    transports: ['websocket'],
-    upgrade: false
+  transports: ['websocket'],
+  upgrade: false
 });
 
 const usuariosConectados = ref([]); // Array con usuarios conectados
