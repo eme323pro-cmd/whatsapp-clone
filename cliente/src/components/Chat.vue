@@ -8,7 +8,7 @@ import { io } from 'socket.io-client';
 });
 */
 
-const socket = io('https://whatsapp-clone-u4sn.onrender.com', {
+const socket = io('https://whatsapp-clone-xxwg.onrender.com', {
   transports: ['websocket'],
   upgrade: false
 });
