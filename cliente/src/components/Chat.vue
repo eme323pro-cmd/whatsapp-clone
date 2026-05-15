@@ -3,7 +3,7 @@ import { ref, onMounted } from 'vue';
 import { io } from 'socket.io-client';
 
 // Conectamos con el servidor
-const socket = io('http://localhost:3000');
+const socket = io('https://whatsapp-clone-xxwg.onrender.com');
 
 const usuariosConectados = ref([]); // Array con usuarios conectados
 const miUsuario = ref({}); // Datos de mi usuario
