@@ -11,7 +11,7 @@ const nombre = ref('');
 const estado = ref('');
 const avatarSeleccionado = ref('');
 
-// Lista de avatares predefinidos
+// lista de avatares predefinidos
 const avatares = [
   'https://api.dicebear.com/7.x/avataaars/svg?seed=Felix',
   'https://api.dicebear.com/7.x/avataaars/svg?seed=Aneka',
