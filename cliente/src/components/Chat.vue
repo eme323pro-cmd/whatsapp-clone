@@ -53,6 +53,7 @@ onMounted(() => {
     });
 
     socket.on('nuevo-mensaje', (msj) => {
+        msj.hora = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
         listaMensajes.value.push(msj);
     });
     

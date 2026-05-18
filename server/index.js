@@ -88,3 +88,6 @@ const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
+
+//Arreglar la hora en el cliente que esta puesta la del servidor, y que cuando estoy logueado y quiero ir al login, que no me deje,
+//que me mande al Chat

@@ -26,7 +26,13 @@ router.beforeEach((to, from, next) => {
 
   if (to.meta.requiresAuth && !usuario) {
     next('/'); // Si no hay usuario en localStorage, al login
-  } else {
+  }
+  
+  else if (to.path == '/' && usuario){
+    next('/chat')
+  }
+  
+  else {
     next(); // Si hay usuario o no requiere auth, adelante
   }
 });
